@@ -14,7 +14,7 @@ import RBT "mo:base/RBTree";
 import Text "mo:base/Text";
 
 shared(msg) actor class Logger() = self {
-  let N: Nat = 3;
+  let N: Nat = 100;
 
   private stable var new_logger_index: Nat = 0;
   private let logger_cans = RBT.RBTree<Nat, Principal>(Nat.compare); //存储创建的logger canister
